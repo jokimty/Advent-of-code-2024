@@ -60,7 +60,9 @@
         }
         static void ProcessInput(string input)
         {
+            // Path: \AdventOfCode2024\1_C#\a\inputs.txt
             //This is where i need to turn the very long text file into two seperate lists...
         }
+
     }
 }
