@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\01_ekstra\\Programmering\\AdventOfCode2024\\1\\a\\1a\\1a.csproj",
+      "projectUniqueName": "C:\\01_ekstra\\Programmering\\AdventOfCode2024\\1_C#\\a\\1a\\1a.csproj",
       "projectName": "1a",
-      "projectPath": "C:\\01_ekstra\\Programmering\\AdventOfCode2024\\1\\a\\1a\\1a.csproj",
+      "projectPath": "C:\\01_ekstra\\Programmering\\AdventOfCode2024\\1_C#\\a\\1a\\1a.csproj",
       "packagesPath": "C:\\Users\\sindr\\.nuget\\packages\\",
-      "outputPath": "C:\\01_ekstra\\Programmering\\AdventOfCode2024\\1\\a\\1a\\obj\\",
+      "outputPath": "C:\\01_ekstra\\Programmering\\AdventOfCode2024\\1_C#\\a\\1a\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
