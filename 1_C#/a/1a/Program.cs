@@ -5,18 +5,14 @@
         static void Main(string[] args)
         {
             int totalDistance = 0;
-            List<int> firstList = new List<int>() {1,4,66};
-            List<int> secondList = new List<int>() {62,6,2};
+            List<int> firstList = new List<int>();
+            List<int> secondList = new List<int>();
 
+            ProcessInput(firstList, secondList);
             MyBubbleSort(firstList);
             MyBubbleSort(secondList);
 
-            firstList.ForEach(i => Console.Write("{0}\t", i));
-            Console.WriteLine("");
-            secondList.ForEach(i => Console.Write("{0}\t", i));
-            Console.WriteLine("");
-
-            // C# has a "zip" operation which I will try using!
+            // C# has a "zip" operation which is cool.
 
             var zippedLists = firstList.Zip(secondList); // ZippedLists is now a list of tuples with two ints in each tuple!
             foreach ((int, int) i in zippedLists)
@@ -30,7 +26,6 @@
                     totalDistance += i.Item2 - i.Item1;
 
                 }
-                Console.WriteLine(Convert.ToString(i));
             }
             Console.WriteLine(totalDistance);
         }
@@ -58,11 +53,33 @@
                 if (counter == listLength) { sorted = true; }
             }
         }
-        static void ProcessInput(string input)
+        static void ProcessInput(List<int> list1, List<int> list2)
         {
             // Path: \AdventOfCode2024\1_C#\a\inputs.txt
-            //This is where i need to turn the very long text file into two seperate lists...
-        }
+            // This is where i need to turn the very long text file into two seperate lists...
+            string path = Directory.GetCurrentDirectory();
+            int pathIndex = path.Length - 19;
+            path = path.Remove(pathIndex);
+            path += "inputs.txt";
+            try
+            {
+                StreamReader streamReader = new StreamReader(path);
+                string line = streamReader.ReadLine();
+                string[] splitString;
+                while (line != null)
+                {
+                    splitString = line.Split(null);
+                    list1.Add(Convert.ToInt32(splitString[0]));
+                    list2.Add(Convert.ToInt32(splitString[3])); // 3 because 1 & 2 are empty spaces.
+                    line = streamReader.ReadLine();
 
+                }
+                streamReader.Close();
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine(error.Message);
+            }
+        }
     }
 }
