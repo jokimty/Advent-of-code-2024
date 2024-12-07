@@ -1,0 +1,15 @@
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.GeneratedMSBuildEditorConfig.editorconfig
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.AssemblyInfoInputs.cache
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.AssemblyInfo.cs
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.csproj.CoreCompileInputs.cache
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.sourcelink.json
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\bin\Debug\net8.0\2.exe
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\bin\Debug\net8.0\2.deps.json
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\bin\Debug\net8.0\2.runtimeconfig.json
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\bin\Debug\net8.0\2.dll
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\bin\Debug\net8.0\2.pdb
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.dll
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\refint\2.dll
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.pdb
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\2.genruntimeconfig.cache
+C:\01_ekstra\Programmering\AdventOfCode2024\2\2\obj\Debug\net8.0\ref\2.dll
