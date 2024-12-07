@@ -5,8 +5,10 @@
         static void Main(string[] args)
         {
             int totalDistance = 0;
+            int similarityScore = 0;
             List<int> firstList = new List<int>();
             List<int> secondList = new List<int>();
+            int[,] similarityArray = new int[1000, 1000];
 
             ProcessInput(firstList, secondList);
             MyBubbleSort(firstList);
@@ -15,6 +17,8 @@
             // C# has a "zip" operation which is cool.
 
             var zippedLists = firstList.Zip(secondList); // ZippedLists is now a list of tuples with two ints in each tuple!
+
+            // Solving part 1:
             foreach ((int, int) i in zippedLists)
             {
                 if (i.Item1 > i.Item2)
@@ -28,6 +32,19 @@
                 }
             }
             Console.WriteLine(totalDistance);
+
+            // Solving part 2:
+            foreach (int i in firstList)
+            {
+                foreach (int j in secondList)
+                {
+                    if (i == j)
+                    {
+                        similarityScore += i;
+                    }
+                }
+            }
+            Console.WriteLine(similarityScore);
         }
         static void MyBubbleSort(List<int> list)
         {
